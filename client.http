@@ -18,7 +18,7 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-  "email": "jackson2@email.com",
+  "email": "jackson@email.com",
   "password": "123456"
 }
 
@@ -30,18 +30,17 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Nova pergunta 3",
+  "title": "Nova pergunta",
   "content": "Conteúdo da nova pergunta"
 }
 
 ###
 
 # @name fetch-recent-questions
-PUT {{baseUrl}}/questions
+PUT {{baseUrl}}/answers/1a96ab24-414d-4529-8d17-127ecc59789e
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "New title",
-  "content": "New Content"
+  "content": "Edit content test"
 }
