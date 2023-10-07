@@ -36,11 +36,7 @@ Authorization: Bearer {{authToken}}
 
 ###
 
-# @name fetch-recent-questions
-PUT {{baseUrl}}/answers/1a96ab24-414d-4529-8d17-127ecc59789e
+# @name test-route
+DELETE {{baseUrl}}/answers/comments/71c1e458-766a-4ce6-b8fb-132b18ef82ff
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
-
-{
-  "content": "Edit content test"
-}

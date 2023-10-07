@@ -34,8 +34,6 @@ export class EditAnswerController {
     const { content } = body
     const { sub: userId } = user
 
-    console.log(content)
-
     const result = await this.editAnswer.execute({
       content,
       answerId,
